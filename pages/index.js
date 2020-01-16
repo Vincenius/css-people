@@ -1,7 +1,11 @@
 import React from 'react'
+import { Person } from '../components'
+import '../global.css'
 
 function HomePage() {
-    return <div>Welcome to Next.js!</div>
+    return <div>
+        <Person />
+    </div>
 }
 
 export default HomePage
