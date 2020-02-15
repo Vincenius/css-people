@@ -3,21 +3,22 @@ import * as S from './styled'
 
 // https://codepen.io/felipebernardes/pen/dREyVW
 function Person() {
+    const openEditor = part => {
+        console.log(part)
+    }
     return <S.Container>
-        <div class="us">
-            <div class="me">
-                <div class="head">
-                    <div class="hair"></div>
-                </div>
-                <div class="arm__left"></div>
-                <div class="arm__right"></div>
-                <div class="body">
-                    <div class="dress"></div>
-                </div>
-                <div class="leg__left"></div>
-                <div class="leg__right"></div>
-            </div>
-        </div>
+        <S.Person>
+            <S.Head onClick={() => openEditor('head')}>
+                <S.Hair></S.Hair>
+            </S.Head>
+            <S.ArmLeft></S.ArmLeft>
+            <S.ArmRight></S.ArmRight>
+            <S.Body>
+                <S.Dress></S.Dress>
+            </S.Body>
+            <S.LegLeft></S.LegLeft>
+            <S.LegRight></S.LegRight>
+        </S.Person>
     </S.Container>
 }
 
